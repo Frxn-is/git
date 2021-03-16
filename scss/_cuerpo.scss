@@ -1,0 +1,69 @@
+
+//@import"variables";
+
+body{
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+    //background-color:$verdeazulado;
+}
+
+.cuerpo{
+    box-sizing: border-box;
+    /* background: chocolate; */
+    /* height: 85vh; */
+    height: fit-content;
+    /* width: 75vw; */
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row; /* acomoda txt e img en una fila */
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.cuerpo__texto{
+        /* background: brown; */
+        height: 50%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+}
+.cuerpo__texto--titulos{
+    margin-top: 1%;
+    /* background: coral; */
+    text-align: center;
+    /* align-self: stretch; */
+    
+    .titPrin{
+        margin-top: 5%;
+        font-family: $athena;
+        /* font-size: calc(10em+10em) */;
+        color: $amarilloclaro;
+    }
+    .titSec{
+        font-family: $barlow, sans-serif;
+        text-transform: uppercase;
+        /* text-align: center; */
+        color: $amarilloclaro;
+        font-weight: lighter;
+    }
+}
+.cuerpo__texto--frase{
+    margin: 5%;
+    width: 75%;
+    text-align: center;
+    /* background: cornflowerblue; */
+    .p1{
+        align-items: center;
+        color: $amarilloclaro;
+        font-family: $barlow, sans-serif;
+        font-weight: medium;
+        /* font-size: 1.5em; */
+        font-size: calc(0.825rem + 0.5vw);
+    }
+}
+.cuerpo__img{
+    margin: auto;
+}

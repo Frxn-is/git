@@ -1,0 +1,65 @@
+//@import"variables";
+
+.footer{
+    /* margin-top: 5%; */
+    background: $verdeazulado03;
+    //height: fit-content;
+    position: absolute;
+    width: 100%;
+    //margin: auto;
+    
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .redes{
+        margin: auto;
+        /* background: tomato; */
+
+        li{
+            margin: auto;
+            list-style: none;
+        }
+    }
+
+    .newsletter{
+        padding: auto;
+        /* background: violet; */
+        color: $amarilloclaro;
+        font-family: $barlow, sans-serif;
+        font-weight:lighter;
+        text-align: start;
+
+        p{
+            margin: auto;
+            font-size: calc(0.925rem + 0.125vw);
+        }
+
+        #email{
+            margin: 0;
+            padding: 0;
+            width: 75%;
+            height: 50%;
+        }
+    }
+    .adv{
+        /* background: yellow; */
+        align-items: center;
+        color: $amarilloclaro;
+        font-family: $barlow, sans-serif;
+        font-weight: medium;
+        font-size: calc(0.725rem + 0.125vw);
+        p{
+            margin: auto;
+            width: 80%;
+            /* box-sizing: content-box; */
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        p{
+            font-size: 8px;
+        }
+    }
+}

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../font/athena.ttf);
+  font-family: "athena"; }
+
+/*header*/
+.header {
+  background: rgba(40, 60, 69, 0.3); }
+
+.header__navbar {
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+.header a {
+  color: #283c45; }
+
+.header a:hover {
+  color: #fc9322;
+  transition: 0.4s; }
+
+/* .header{
+    .dropdown-menu{
+        //background:$verdeazulado03;
+        background-color:none;
+
+    }
+} */
+.dropdown-menu {
+  background-color: rgba(40, 60, 69, 0.3);
+  top: 120%; }
+  .dropdown-menu a {
+    font-weight: bolder; }
+
+a:hover {
+  color: #fc9322; }
+
+/* .dropdown-toggle::after {
+    display: none;
+} */
+body {
+  background: url(../img/fond.jpg) no-repeat;
+  background-size: cover; }
+
+.cuerpo {
+  box-sizing: border-box;
+  /* background: chocolate; */
+  /* height: 85vh; */
+  height: fit-content;
+  /* width: 75vw; */
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /* acomoda txt e img en una fila */
+  justify-content: space-around;
+  align-content: center;
+  align-items: center; }
+
+.cuerpo__texto {
+  /* background: brown; */
+  height: 50%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+
+.cuerpo__texto--titulos {
+  margin-top: 1%;
+  /* background: coral; */
+  text-align: center;
+  /* align-self: stretch; */ }
+  .cuerpo__texto--titulos .titPrin {
+    margin-top: 5%;
+    font-family: "Athena";
+    /* font-size: calc(10em+10em) */
+    color: #f9eba7; }
+  .cuerpo__texto--titulos .titSec {
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
+    /* text-align: center; */
+    color: #f9eba7;
+    font-weight: lighter; }
+
+.cuerpo__texto--frase {
+  margin: 5%;
+  width: 75%;
+  text-align: center;
+  /* background: cornflowerblue; */ }
+  .cuerpo__texto--frase .p1 {
+    align-items: center;
+    color: #f9eba7;
+    font-family: "Barlow", sans-serif;
+    font-weight: medium;
+    /* font-size: 1.5em; */
+    font-size: calc(0.825rem + 0.5vw); }
+
+.cuerpo__img {
+  margin: auto; }
+
+.footer {
+  /* margin-top: 5%; */
+  background: rgba(40, 60, 69, 0.3);
+  position: absolute;
+  width: 100%; }
+  .footer .row {
+    --bs-gutter-x: 0; }
+  .footer .redes {
+    margin: auto;
+    /* background: tomato; */ }
+    .footer .redes li {
+      margin: auto;
+      list-style: none; }
+  .footer .newsletter {
+    padding: auto;
+    /* background: violet; */
+    color: #f9eba7;
+    font-family: "Barlow", sans-serif;
+    font-weight: lighter;
+    text-align: start; }
+    .footer .newsletter p {
+      margin: auto;
+      font-size: calc(0.925rem + 0.125vw); }
+    .footer .newsletter #email {
+      margin: 0;
+      padding: 0;
+      width: 75%;
+      height: 50%; }
+  .footer .adv {
+    /* background: yellow; */
+    align-items: center;
+    color: #f9eba7;
+    font-family: "Barlow", sans-serif;
+    font-weight: medium;
+    font-size: calc(0.725rem + 0.125vw); }
+    .footer .adv p {
+      margin: auto;
+      width: 80%;
+      /* box-sizing: content-box; */ }
+
+@media (max-width: 600px) {
+  .newsletter p {
+    font-size: 8px; } }
+
+.nosotros {
+  background-size: cover;
+  height: 82.5vh; }
+
+.nosotros__titulo {
+  margin-top: 0.5em;
+  font-family: "Barlow";
+  color: #f9eba7;
+  font-size: calc(2rem+0.65rem);
+  text-align: center; }
+
+.nosotros__desc {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 8vh; }
+  .nosotros__desc p {
+    margin-left: auto;
+    margin-right: 5em;
+    width: 70%;
+    font-family: "Barlow";
+    /*  color: $amarilloclaro; */
+    text-align: center; }
+
+/* .nosotros__desc--txt{
+    width: 50vw;
+} */
+/* .nosotros__img{
+    background: tomato;
+} */
+.p1 {
+  color: #f9eba7; }
+
+.p2 {
+  color: #f9eba7; }
+
+.p3 {
+  color: #f9eba7; }
+
+.p1 {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique; }
+
+.p2 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-style: normal; }
